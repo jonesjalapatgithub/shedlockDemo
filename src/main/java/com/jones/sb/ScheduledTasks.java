@@ -1,4 +1,4 @@
-package com.sunbeam.sb;
+package com.jones.sb;
 
 import java.text.SimpleDateFormat;
 import java.util.Date;
@@ -10,8 +10,8 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.scheduling.annotation.Scheduled;
 import org.springframework.stereotype.Component;
 
+import com.jones.sb.controller.CountryController;
 import com.mongodb.client.MongoClient;
-import com.sunbeam.sb.controller.CountryController;
 
 import net.javacrumbs.shedlock.core.LockProvider;
 import net.javacrumbs.shedlock.provider.mongo.MongoLockProvider;
@@ -30,7 +30,7 @@ public class ScheduledTasks {
 
 //	@Scheduled(fixedRate = 5000)
 //	@SchedulerLock(name = "scheduledTaskName")
-    @Scheduled(cron = "0 0/15 * * * ?")
+    @Scheduled(cron = "* * * * * ?")
     @SchedulerLock(name = "TaskScheduler_scheduledTask", 
       lockAtLeastFor = "PT5M", lockAtMostFor = "PT14M")
 	public void reportCurrentTime() {

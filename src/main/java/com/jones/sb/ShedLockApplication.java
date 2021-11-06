@@ -1,4 +1,4 @@
-package com.sunbeam.sb;
+package com.jones.sb;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.CommandLineRunner;
@@ -6,8 +6,8 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.scheduling.annotation.EnableScheduling;
 
-import com.sunbeam.sb.model.Country;
-import com.sunbeam.sb.repository.CountryRepository;
+import com.jones.sb.model.Country;
+import com.jones.sb.repository.CountryRepository;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;

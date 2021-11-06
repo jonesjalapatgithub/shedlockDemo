@@ -1,12 +1,12 @@
-package com.sunbeam.sb.controller;
+package com.jones.sb.controller;
 
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.sunbeam.sb.model.Country;
-import com.sunbeam.sb.repository.CountryRepository;
+import com.jones.sb.model.Country;
+import com.jones.sb.repository.CountryRepository;
 
 import java.util.List;
 
